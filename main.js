@@ -14,8 +14,8 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.setZ(30);
-camera.position.setX(-3);
+camera.position.setZ(20);
+camera.position.setX(-5);
 
 renderer.render(scene, camera);
 
@@ -30,7 +30,7 @@ scene.add(torus);
 // Lights
 
 const pointLight = new THREE.PointLight(0xffffff);
-pointLight.position.set(5, 5, 5);
+pointLight.position.set(20, 5, 20);
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
@@ -67,7 +67,7 @@ scene.background = spaceTexture;
 
 const jeffTexture = new THREE.TextureLoader().load('jeff.jfif');
 
-const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
+const jeff = new THREE.Mesh(new THREE.BoxGeometry(2.5, 2.5, 2.5), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
 scene.add(jeff);
 
@@ -86,10 +86,10 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-moon.position.z = 30;
+moon.position.z = 20;
 moon.position.setX(-10);
 
-jeff.position.z = -5;
+jeff.position.z = -4;
 jeff.position.x = 2;
 
 // Scroll Animation
