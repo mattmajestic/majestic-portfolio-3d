@@ -1,12 +1,13 @@
-# Scrollable 3D Animation with Three.js
+# Matt Majestic 3D Portfolio Website
 
-- Watch the [full tutorial](https://youtu.be/Q7AOvWpIVHU) on YouTube
-- [Scrollable Three.js Animation](https://fireship.io/snippets/threejs-scrollbar-animation) Snippet
-
-## Usage
+Deploy to Web
+- Clone Repo
+- Change Content
 
 ```
 git clone <this-repo>
 npm install
 npm run dev
 ```
+
+- Deploy on Netlify
